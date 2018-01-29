@@ -1,0 +1,79 @@
+<div class="head_box">
+    <div id="head_wrap">
+        <!-- 左侧logo-->
+        <div id="menu_logo">
+            <img src="img/LOGO.jpg">
+        </div>
+        <!-- 中间搜索框-->
+            <!--<div id="find_wrap">-->
+        <div id="find_bar" class="lf">
+            <ul id="shelper">
+                <!-- li-->
+            </ul>
+            <input type="text" id="find_input" palceholder="请输入你想购买的商品">
+            <!-- 后面的搜索小logo-->
+            <a id="find_but" routerLink="/list" class="search-img"
+               data-trigger="search">搜索</a>
+            <div class='input_hot_word'>
+                <!-- 存在是为了下面的导航栏定位-->
+            </div>
+           <!--  <ul id='find_select'>
+                <li><a href="#">小米手机5 <span class='result'>约有11件</span></a></li>
+                <li><a href="#">空气净化器2 <span class='result'>约有1件</span></a></li>
+                <li><a href="#">活塞耳机 <span class='result'>约有4件</span></a></li>
+                <li><a href="#">小米路由器 <span class='result'>约有8件</span></a></li>
+                <li><a href="#">移动电源 <span class='result'>约有21件</span></a></li>
+                <li><a href="#">运动相机 <span class='result'>约有3件</span></a></li>
+                <li><a href="#">小蚁摄像机 <span class='result'>约有2件</span></a></li>
+                <li><a href="#">小米体重秤 <span class='result'>约有1件</span></a></li>
+                <li><a href="#">小米插线板 <span class='result'>约有13件</span></a></li>
+                <li><a href="#">配件优惠套装 <span class='result'>约有32件</span></a></li>
+            </ul> -->
+        </div>
+        <!-- 右侧登陆注册-->
+        <div id="head_right" class="loginList">
+            <ul *ngIf="!isUserLogin">
+                <li><a class="head_nav_a" routerLink="/login" id='welcome'>登陆
+                <span>|</span>
+                </a>
+                <li><a class="head_nav_a" href='register.html'>注册</a></li>
+            </ul>
+             <ul id="head_landing" *ngIf="isUserLogin">
+                <li><b>{{"欢迎"+userName}}</b>
+                <a (click)="logout()">退出</a>
+                <span>|</span>
+                </li>
+                <li><a class="head_nav_a">用户中心</a></li>
+            </ul>
+            <!--<ul class="welcomeList">
+                <li>
+                    <!--<a href=""; id="logout">注销</a>-->
+                <!--</li>
+                <li id="head_car">
+                    <a class="head_car_text" href='#'>购物车（0）</a>
+                    <div id="car_content">
+                        <a class="car_text">购物车中还没有商品,赶紧选购吧</a>
+                    </div>
+                </li>
+            </ul>-->
+        </div>
+    </div>
+</div>
+<div id="main_head_box">
+    <div id="menu_wrap">
+        <!-- 中间导航栏-->
+        <div id="menu_nav">
+            <ul>
+                <li class="menu_li" control="xiaomiphone"><a href="#">小米手机</a></li>
+                <li class="menu_li" control="hongmiphone"><a href="#">红米</a></li>
+                <li class="menu_li" control="pingban"><a href="#">平板 · 笔记本</a></li>
+                <li class="menu_li" control="tv"><a href="#">电视</a></li>
+                <li class="menu_li" control="hz"><a href="#">盒子 · 影音</a></li>
+                <li class="menu_li" control="luyou"><a href="#">路由器</a></li>
+                <li class="menu_li" control="yingjian"><a href="#">智能硬件</a></li>
+                <li class="menu_li"><a href='#'>服务</a></li>
+                <li class="menu_li"><a href='#'>社区</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

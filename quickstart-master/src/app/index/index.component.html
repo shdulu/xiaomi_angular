@@ -1,0 +1,356 @@
+<storeHeader></storeHeader>
+
+<carousel [interval]="NextPhotoInterval" [noWrap]="noLoopSlides">
+    <slide *ngFor="let slidez of slides;let index=index" [active]="slidez.active"> 
+             <img (Click)="jumpToDetail()" [src]="slidez.image" style="margin:auto;">
+  
+        <div class="carousel-caption">
+          <!--<h3 style="background-color: transparent;color: white;">Slide {{index + 1}}</h3>-->
+            <p style="background-color: transparent;color: white;">{{slidez.text}}</p>
+        </div>
+    </slide>
+    <!--<imgs *ngFor="let imgz of imgs;let index=index" [active]="imgz.active">
+            <a [routerLink]='imgz.href'></a>
+    </imgs>-->
+</carousel>
+
+
+<div id="menu_content_bg">
+        <div id="menu_content_wrap">
+            <ul style="top: 0px;">
+                <li id="xiaomiphone">
+                    <div class="menu_content">
+                        <img src="img/mi4!160x110.jpg">
+                        <p class="menu_content_tit">小米手机4</p>
+                        <p class="menu_content_price">1499元起</p>
+                    </div>
+                    <span class="menu_content_line"></span>
+                    <div class="menu_content">
+                        <img src="img/minote!160x110.jpg">
+                        <p class="menu_content_tit">小米NOTE标准版</p>
+                        <p class="menu_content_price">1999元起</p>
+                    </div>
+                    <span class="menu_content_line"></span>
+                    <div class="menu_content">
+                        <img src="img/minotepro!160x110.jpg">
+                        <p class="menu_content_tit">小米NOTE顶配版</p>
+                        <p class="menu_content_price">2999元起</p>
+                    </div>
+                </li>
+                <li id="hongmiphone">
+                    <div class="menu_content">
+                        <img src="img/hongmi2a!160x110.jpg">
+                        <p class="menu_content_tit">红米手机2A</p>
+                        <p class="menu_content_price">499元</p>
+                    </div>
+                    <span class="menu_content_line"></span>
+                    <div class="menu_content">
+                        <img src="img/hongmi2!160x110.jpg">
+                        <p class="menu_content_tit">红米手机2</p>
+                        <p class="menu_content_price">599元</p>
+                    </div>
+                    <span class="menu_content_line"></span>
+                    <div class="menu_content">
+                        <img src="img/note!160x110.jpg">
+                        <p class="menu_content_tit">红米NOTE</p>
+                        <p class="menu_content_price">699元</p>
+                    </div>
+                    <span class="menu_content_line"></span>
+                    <div class="menu_content">
+                        <img src="img/note2!160x110.jpg">
+                        <p class="menu_content_tit">红米NOTE2</p>
+                        <p class="menu_content_price">799元</p>
+                    </div>
+                </li>
+                <li id="pingban">
+                    <div class="menu_content">
+                        <img src="img/mipad16!160x110.jpg">
+                        <p class="menu_content_tit">小米平板16G</p>
+                        <p class="menu_content_price">1299元</p>
+                    </div>
+                    <span class="menu_content_line"></span>
+                    <div class="menu_content">
+                        <img src="img/mipad64!160x110.jpg">
+                        <p class="menu_content_tit">小米平板64G</p>
+                        <p class="menu_content_price">1499元起</p>
+                    </div>
+                </li>
+                <li id="tv">
+                    <div class="menu_content">
+                        <img src="img/mitv40!160x110.jpg">
+                        <p class="menu_content_tit">小米电视2&nbsp;40英寸</p>
+                        <p class="menu_content_price">1999元</p>
+                    </div>
+                    <span class="menu_content_line"></span>
+                    <div class="menu_content">
+                        <img src="img/mitv48!160x110.jpg">
+                        <p class="menu_content_tit">小米电视2S&nbsp;48英寸</p>
+                        <p class="menu_content_price">2999元起</p>
+                    </div>
+                    <span class="menu_content_line"></span>
+                    <div class="menu_content">
+                        <img src="img/mitv49!160x110.jpg">
+                        <p class="menu_content_tit">小米电视2&nbsp;49英寸</p>
+                        <p class="menu_content_price">3399元起</p>
+                    </div>
+                    <span class="menu_content_line"></span>
+                    <div class="menu_content">
+                        <img src="img/mitv55!160x110.jpg">
+                        <p class="menu_content_tit">小米电视2&nbsp;55英寸</p>
+                        <p class="menu_content_price">4499元起</p>
+                    </div>
+                    <span class="menu_content_line"></span>
+                    <div class="menu_content">
+                        <img src="img/hezimini!160x110.jpg">
+                        <p class="menu_content_tit">小米盒子MINI版</p>
+                        <p class="menu_content_price">199元</p>
+                    </div>
+                    <span class="menu_content_line"></span>
+                    <div class="menu_content">
+                        <img src="img/hezis!160x110.jpg">
+                        <p class="menu_content_tit">小米盒子增强版</p>
+                        <p class="menu_content_price">299元</p>
+                    </div>
+                </li>
+                <li id="luyou">
+                    <div class="menu_content">
+                        <img src="img/miwifi!160x110.jpg">
+                        <p class="menu_content_tit">全新小米路由器</p>
+                        <p class="menu_content_price">699元起</p>
+                    </div>
+                    <span class="menu_content_line"></span>
+                    <div class="menu_content">
+                        <img src="img/miwifimini!160x110.jpg">
+                        <p class="menu_content_tit">小米路由器&nbsp;MINI</p>
+                        <p class="menu_content_price">129元</p>
+                    </div>
+                    <span class="menu_content_line"></span>
+                    <div class="menu_content">
+                        <img src="img/miwifilite!160x110.jpg">
+                        <p class="menu_content_tit">小米路由器&nbsp;青春版</p>
+                        <p class="menu_content_price">79元</p>
+                    </div>
+                    <span class="menu_content_line"></span>
+                    <div class="menu_content">
+                        <img src="img/wifiExtension!160x110.jpg">
+                        <p class="menu_content_tit">小米WIFI放大器</p>
+                        <p class="menu_content_price">39元</p>
+                    </div>
+                </li>
+                <li id="yingjian">
+                    <div class="menu_content">
+                        <img src="http://c1.mifile.cn/f/i/15/goods/nav/scale!160x110.jpg">
+                        <p class="menu_content_tit">体重称</p>
+                        <p class="menu_content_price">99元</p>
+                    </div>
+                    <span class="menu_content_line"></span>
+                    <div class="menu_content">
+                        <img src="img/xiaoyi!160x110.jpg">
+                        <p class="menu_content_tit">摄像头</p>
+                        <p class="menu_content_price">129元起</p>
+                    </div>
+                    <span class="menu_content_line"></span>
+                    <div class="menu_content">
+                        <img src="img/yicamera!160x110.jpg">
+                        <p class="menu_content_tit">运动相机</p>
+                        <p class="menu_content_price">399元起</p>
+                    </div>
+                    <span class="menu_content_line"></span>
+                    <div class="menu_content">
+                        <img src="img/ihealth!160x110.jpg">
+                        <p class="menu_content_tit">血压计</p>
+                        <p class="menu_content_price">199元</p>
+                    </div>
+                    <span class="menu_content_line"></span>
+                    <div class="menu_content">
+                        <img src="img/chazuo!160x110.jpg">
+                        <p class="menu_content_tit">智能插座</p>
+                        <p class="menu_content_price">59元</p>
+                    </div>
+                    <span class="menu_content_line"></span>
+                    <div class="menu_content">
+                        <img src="img/smart!160x110.jpg">
+                        <p class="menu_content_tit">查看全部
+                            <br>智能硬件</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div> 
+    <div style='margin-top:20px;width:100%'>
+      <div id="head_other_wrap">
+        <div id="head_other">
+            <ul>
+                <li>
+                    <a id="a1">                      
+                        <span>选购手机</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="a2">
+                       
+                        <span>企业团购</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="a3">
+                       
+                        <span>官翻产品</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="a4">
+                       
+                        <span>小米移动</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="a5">
+                       
+                        <span>以旧换新</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="a6">
+                       
+                        <span>话费充值</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="head_other_ad"><a href="#"><img src="img/T184E_BQWT1RXrhCrK.jpg"></a></div>
+        <div class="head_other_ad"><a href="#"><img src="img/T1yvd_BQDT1RXrhCrK.jpg"></a></div>
+        <div class="head_other_ad"><a href="#"><img src="img/T1mahQBmKT1RXrhCrK.jpg"></a></div>
+    </div> 
+    <div style='width:100%;margin-top:20px'>
+       <div id="head_hot_goods_wrap">
+        <div id="head_hot_goods_title">
+            <span class="title_span">小米明星单品</span>
+            <div id="head_hot_goods_change">
+                <span id="head_hot_goods_prave"><</span>
+                <span id="head_hot_goods_next">></span>
+            </div>
+        </div>
+        <div style='width:100%'>
+             <div id="head_hot_goods_content">
+            <ul>
+                <li>
+                    <a href='#'><img src="img/T1riKjB7VT1RXrhCrK.jpg"></a>
+                    <a href='#'>小米电视2/2S 全系列</a>
+                    <a href='#'>40/48/49/55英寸 现货购买</a>
+                </li>
+                <li>
+                    <a href='#'><img src="img/T19AbjBCDT1RXrhCrK.jpg"></a>
+                    <a href='#'>小米平板</a>
+                    <a href='#'>全球首款 NVIDIA Tegra K1 平板</a>
+                </li>
+                <li>
+                    <a href='#'><img src="img/T1meZjBCAT1RXrhCrK.jpg"></a>
+                    <a href='#'>小米盒子增强版 1G</a>
+                    <a href='#'>首款4K超高清网络机顶盒</a>
+                </li>
+                <li>
+                    <a href='#'><img src="img/T1tsEgB7DT1RXrhCrK.jpg"></a>
+                    <a href='#'>全新小米路由器</a>
+                    <a href='#'>顶配路由器，企业级性能</a>
+                </li>
+                <li>
+                    <a href='#'><img src="img/T10TJjB5hT1RXrhCrK.jpg"></a>
+                    <a href='#'>小米头戴式耳机</a>
+                    <a href='#'>媲美主流千元级头戴耳机</a>
+                </li>
+                <li>
+                    <a href='#'><img src="img/T1hLhjB_AT1RXrhCrK.jpg"></a>
+                    <a href='#'>小米插线板</a>
+                    <a href='#'>3重安全保护，插线板中的艺术品</a>
+                </li>
+                <li>
+                    <a href='#'><img src="img/T1KDAjBCAT1RXrhCrK.jpg"></a>
+                    <a href='#'>小米路由器mini</a>
+                    <a href='#'>主流双频AC智能路由器</a>
+                </li>
+                <li>
+                    <a href='#'><img src="img/T16eEjBKhT1RXrhCrK.jpg"></a>
+                    <a href='#'>小米移动电源10000mAh</a>
+                    <a href='#'>高密度进口电芯，仅名片大小</a>
+                </li>
+                <li>
+                    <a href='#'><img src="img/T1JnWjBCCT1RXrhCrK.jpg"></a>
+                    <a href='#'>小米蓝牙耳机</a>
+                    <a href='#'>2015德国IF大奖，高清通话音质</a>
+                </li>
+                <li>
+                    <a href='#'><img src="img/T1BsbjBvLT1RXrhCrK.jpg"></a>
+                    <a href='#'>小米活塞耳机</a>
+                    <a href='#'>2015红点奖，独家音质优化专利</a>
+                </li>
+            </ul>
+        </div>
+        </div>      
+    </div> 
+
+
+    <div id="main_show_box">
+        <div id="floor_1">
+             <div id="floor_head">
+                 <span class="title_span">智能硬件</span>
+             </div>
+              <div class="floor_goods_wrap">
+            <ul>
+                <li class="floor_goods_wrap_li">
+                    <a><img src="img/T1IhLjBC_T1RXrhCrK.jpg"></a>
+                </li>
+                <li class="floor_goods_wrap_li">
+                    <a class="floor_goods_img" href='#' href='#'><img src="img/T1odEjB5bT1RXrhCrK.jpg"></a>
+                    <a class="floor_goods_tit" href='#' href='#'>小米智能家庭套装</a>
+                    <a class="floor_goods_txt" href='#' href='#'>3分钟快速安装，30多种智能玩法</a>
+                    <a class="floor_goods_price" href='#' href='#'>199元</a>
+                </li>
+                <li class="floor_goods_wrap_li">
+                    <a class="floor_goods_img" href='#'><img src="img/T1JKxvBXhv1RXrhCrK.jpg"></a>
+                    <a class="floor_goods_tit" href='#'>小米随身WIFI 8GB U盘版</a>
+                    <a class="floor_goods_txt" href='#'>随身上网神器，内置8GB U盘</a>
+                    <a class="floor_goods_price" href='#'>49.9元</a>
+                </li>
+                <li class="floor_goods_wrap_li">
+                    <a class="floor_goods_img" href='#'><img src="img/T18yZQBCET1RXrhCrK.jpg"></a>
+                    <a class="floor_goods_tit" href='#'>小蚁智能摄像机</a>
+                    <a class="floor_goods_txt" href='#'>能看能听能说，手机远程观看</a>
+                    <a class="floor_goods_price" href='#'>149元</a>
+                </li>
+                <li class="floor_goods_wrap_li">
+                    <a class="floor_goods_img" href='#'><img src="img/T1YoZQByYT1RXrhCrK.jpg"></a>
+                    <a class="floor_goods_tit" href='#'>小米体重称</a>
+                    <a class="floor_goods_txt" href='#'>高精度压力传感器 ｜ 手机管理全家健康</a>
+                    <a class="floor_goods_price" href='#'>99元</a>
+                </li>
+                <li class="floor_goods_wrap_li">
+                    <a class="floor_goods_img" href='#'><img src="img/T16nVjBCKT1RXrhCrK.jpg"></a>
+                    <a class="floor_goods_tit" href='#'>小蚁运动机</a>
+                    <a class="floor_goods_txt" href='#'>边玩边录边拍，手机随时分享</a>
+                    <a class="floor_goods_price" href='#'>399元</a>
+                </li>
+                <li class="floor_goods_wrap_li">
+                    <a class="floor_goods_img" href='#'><img src="img/T18zWQB4WT1RXrhCrK.jpg"></a>
+                    <a class="floor_goods_tit" href='#'>小米路由器 mini</a>
+                    <a class="floor_goods_txt" href='#'>主流双频AC智能路由器，性价比之王</a>
+                    <a class="floor_goods_price" href='#'>129元</a>
+                </li>
+                <li class="floor_goods_wrap_li">
+                    <a class="floor_goods_img" href='#'><img src="img/T1oixjB5bT1RXrhCrK.jpg"></a>
+                    <a class="floor_goods_tit" href='#'>小米智能插座</a>
+                    <a class="floor_goods_txt" href='#'>手机远程遥控开关，带USB接口</a>
+                    <a class="floor_goods_price" href='#'>59元</a>
+                </li>
+                <li class="floor_goods_wrap_li">
+                    <a class="floor_goods_img" href='#'><img src="img/T1KzbQBvbT1RXrhCrK.jpg"></a>
+                    <a class="floor_goods_tit" href='#'>小米水质TDS检测笔</a>
+                    <a class="floor_goods_txt" href='#'>准确检测家中水质纯度</a>
+                    <a class="floor_goods_price" href='#'>39元</a>
+                </li>
+                <div style="clear:both;"></div>
+            </ul>
+        </div> 
+    </div>
+
+    <storeFooter></storeFooter>

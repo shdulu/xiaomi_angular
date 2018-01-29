@@ -1,2 +1,1 @@
 # xiaomi_angular
-xiaomi
